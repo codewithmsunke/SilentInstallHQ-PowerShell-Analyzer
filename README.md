@@ -14,6 +14,7 @@ A compact PowerShell CLI wrapper for the SilentInstallHQ API that analyzes Windo
 
 - PowerShell 5.1 or newer (Windows PowerShell 5.1 and PowerShell 7+ are supported)
 - Network access to the configured `BaseUrl` (default: https://app.silentinstallhq.com)
+- A valid API key or access token for Silent Install HQ before running the script. This credential is required to call the API endpoint successfully.
 
 ## Files
 
@@ -80,6 +81,12 @@ Example command:
 
 - The script never uploads files to VirusTotal — VirusTotal checks are performed by querying an existing VT file report by SHA256.
 - Large-file analysis uses a pre-signed upload URL from SilentInstallHQ and will upload the binary to that destination as part of the async flow. Review and trust the destination before uploading sensitive binaries.
+- Note: obtain a valid Silent Install HQ API key or access token before running the script; it is required to access the Silent Install HQ API endpoint.
+
+## API documentation
+
+- [API Overview](https://docs.virustotal.com/docs/api-overview)
+- [API Reference — Silent Install HQ](https://app.silentinstallhq.com/docs)
 
 ## Inspiration
 
