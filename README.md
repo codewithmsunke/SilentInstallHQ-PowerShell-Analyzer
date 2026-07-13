@@ -52,20 +52,6 @@ Example command:
 
 ![7-Zip analysis details](./output/7zip-output1.1.png)
 
-#### Google Chrome example
-
-Example command:
-
-```powershell
-.\SilentInstallHQ.ps1 -Source "https://dl.google.com/chrome/install/ChromeStandaloneEnterprise64.msi" -OutFile "C:\Temp\chrome-profile.json"
-```
-
-![Chrome analysis output](./output/Chrome-output2.png)
-
-![Chrome analysis details](./output/Chrome-output2.1.png)
-
-![Chrome analysis summary](./output/Chrome-output2.2.png)
-
 ### Important parameters
 
 - `-Source` (required): HTTPS URL or local file path to analyze
